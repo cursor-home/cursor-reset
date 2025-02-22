@@ -1,3 +1,5 @@
+> **Important Notice**: Cursor has started checking MAC addresses. If this script doesn't work, please refer to [go-cursor-help](https://github.com/yuaotian/go-cursor-help?tab=readme-ov-file). If you have a solution, we welcome your PR!
+
 # Cursor Trial Reset Tool
 
 A utility tool that helps manage Cursor editor's device identification system by resetting stored device IDs. This can help users to resolve issues related to account restrictions when switching between accounts or during trial periods.
@@ -31,7 +33,6 @@ python3 reset.py
 This will generate a new random device ID.
 
 ❗️❗️❗️ **Important**: You need to log out and completely close Cursor before running the script. If Cursor is still running in the background, it may revert back to the previous device ID, undoing the reset.
-
 
 ## Configuration Location
 
