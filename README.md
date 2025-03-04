@@ -4,6 +4,27 @@
 
 A utility tool that helps manage Cursor editor's device identification system by resetting stored device IDs. This can help users to resolve issues related to account restrictions when switching between accounts or during trial periods.
 
+## Download Compatible Version
+**Cursor v0.44.11**
+- Windows: [Official](https://downloader.cursor.sh/builds/250103fqxdt5u9z/windows/nsis/x64) | [Mirror](https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.44.11%20-%20Build%20250103fqxdt5u9z-x64.exe)
+- Mac: [Apple Silicon](https://dl.todesktop.com/230313mzl4w4u92/versions/0.44.11/mac/zip/arm64)
+
+## Disable Auto-Update Feature
+> To prevent Cursor from automatically updating to unsupported new versions, you can block the update server.
+
+1. Open Hosts file:
+```bash
+sudo vim /etc/hosts
+```
+
+2. Add the following lines to the file and save:
+```
+# block cursor autoupdate
+127.0.0.1 download.todesktop.com
+```
+
+> ⚠️ **Note:** After disabling the autoupdates, you can execute the script to reset the device ID.
+
 ## How It Works
 
 The tool generates a new device identifier, which allows Cursor to recognize your system as a new device.
